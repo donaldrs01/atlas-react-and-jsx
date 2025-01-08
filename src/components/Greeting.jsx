@@ -1,4 +1,7 @@
 import React from 'react';
+import dayImage from '../assets/day.svg';
+import eveningImage from '../assets/evening.svg';
+import nightImage from '../assets/night.svg';
 
 
 // Create 'Greeting' component
@@ -11,16 +14,16 @@ const Greeting = () => {
     let text = "";
 
     if (currentHour >= 6 && currentHour < 12) {
-        image = 'src/assets/day.svg';
+        image = dayImage;
         text = 'Good Morning!';
     } else if (currentHour >= 12 && currentHour < 17) {
-        image = 'src/assets/day.svg';
+        image = dayImage;
         text = 'Good Afternoon!';
     } else if (currentHour >= 17 && currentHour < 20) {
-        image = 'src/assets/evening.svg';
+        image = eveningImage;
         text = 'Good Evening!';
     } else {
-        image = 'src/assets/night.svg';
+        image = nightImage;
         text = 'Good Night!'
     }
 
