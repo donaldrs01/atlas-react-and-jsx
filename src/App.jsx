@@ -3,6 +3,7 @@ import Greeting from './components/Greeting';
 import SocialLinks from './components/SocialLinks';
 import Header from './components/Header';
 import Section from './components/Section';
+import HelpfulResource from './components/HelpfulResource';
 
 function App() {
   return (
@@ -17,6 +18,24 @@ function App() {
         <li>It doesn't reinvent the wheel - it utilizes languages that most programmers are already familiar with</li>
         <li>React is widely used across the programming community. This has allowed for the creations of thousands of libraries and tools to help its users</li>
         <li>Components used in React are easily testable using a similar methodology to other programming</li>
+      </Section>
+      <Section title="Helpful Resources">
+        <HelpfulResource
+          link="https://react.dev/learn"
+          label="The 'Quick Start' guide from the React developers - great for an introduction to React concepts"
+        />
+        <HelpfulResource
+          link="https://www.youtube.com/watch?v=j942wKiXFu8&list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d&ab_channel=NetNinja"
+          label="A React video tutorial series by user 'Net Ninja' that walks through all of the fundamental React concepts"
+        />
+        <HelpfulResource
+          link="https://www.freecodecamp.org/news/the-react-handbook-b71c27b0a795/"
+          label={
+            <>
+            Flavio Copes' <em>React Handbook</em> introduces the user to React with interactive examples and descriptions
+            </>
+          }
+        />
       </Section>
     </div>
   );
